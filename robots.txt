@@ -1,0 +1,4 @@
+txt
+User-agent: *
+Allow: /
+Sitemap: https://ariantechzone-stack.github.io/sitemap.xml
