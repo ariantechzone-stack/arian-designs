@@ -1,13 +1,11 @@
-title: "Arian Designs"
-description: "Modern Clean Blog + Portfolio"
-baseurl: ""
-url: "https://ariantechzone-stack.github.io"
+title: Arian Designs
+description: "Clean, modern, and minimal design"
+baseurl: "" # use if your site is at username.github.io/repo
+url: "https://<ariantechzone-stack>.github.io" # change to your production url if needed
 theme: jekyll-theme-primer
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-permalink: /blog/:title/
 
 
