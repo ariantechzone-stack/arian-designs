@@ -2,10 +2,12 @@ title: "Arian Designs"
 description: "Modern Clean Blog + Portfolio"
 baseurl: ""
 url: "https://ariantechzone-stack.github.io"
-theme: minima
-markdown: kramdown
+theme: jekyll-theme-primer
+
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
 permalink: /blog/:title/
+
 
