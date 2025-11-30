@@ -1,11 +1,12 @@
 title: Arian Designs
 description: "Clean, modern, and minimal design"
-baseurl: "" # use if your site is at username.github.io/repo
-url: "https://<ariantechzone-stack>.github.io" # change to your production url if needed
+baseurl: "https://ariantechzone-stack.github.io/" 
+url: "https://<ariantechzone-stack>.github.io" 
 theme: jekyll-theme-primer
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
 
 
 
