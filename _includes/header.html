@@ -1,6 +1,21 @@
-<header class="site-header">
-  <nav>
-    <a href="{{ "/" | relative_url }}">Home</a>
-    <a href="{{ "/blog/" | relative_url }}">Blog</a>
-  </nav>
+<header class="header">
+  <div class="container">
+    <div class="logo">Arian Designs</div>
+
+    <nav class="nav" id="navMenu">
+      <a href="{{ "/" | relative_url }}">Home</a>
+      <a href="{{ "/blog/" | relative_url }}">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+  </div>
 </header>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("open");
+}
+</script>
