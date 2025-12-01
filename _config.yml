@@ -1,11 +1,15 @@
 title: Arian Designs
 description: "Clean, modern, and minimal design"
-baseurl: "https://ariantechzone-stack.github.io/" 
-url: "https://<ariantechzone-stack>.github.io" 
+baseurl: "" 
+url: "https://ariantechzone-stack.github.io" 
+
 theme: jekyll-theme-primer
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+
 
 
 
