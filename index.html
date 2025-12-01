@@ -1,23 +1,8 @@
 ---
 layout: home
-title: "Arian Designs"
 ---
-
 <section class="hero">
-  <h1>Design. Create. Inspire.</h1>
-  <p>Minimal • Modern • Aesthetic — Daily Designs & Blogs.</p>
+  <h1>Arian Designs</h1>
+  <p>Clean • Minimal • Modern</p>
 </section>
 
-<section class="latest-posts">
-  <h2>Latest Posts</h2>
-
-  <div class="post-grid">
-    {% for post in site.posts limit:6 %}
-    <a class="post-card" href="{{ post.url | relative_url }}">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
-      <span>{{ post.date | date: "%d %b %Y" }}</span>
-    </a>
-    {% endfor %}
-  </div>
-</section>
