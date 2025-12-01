@@ -7,29 +7,31 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      # Step 1: Checkout repo
+      # 1️⃣ Checkout repo
       - uses: actions/checkout@v3
 
-      # Step 2: Setup Ruby
+      # 2️⃣ Setup Ruby
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
 
-      # Step 3: Install dependencies
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install
 
-      # Step 4: Build Jekyll site
+      # 4️⃣ Build Jekyll site
       - name: Build site
         run: bundle exec jekyll build
 
-      # Step 5: Deploy to GitHub Pages
+      # 5️⃣ Deploy to GitHub Pages
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          enable_jekyll: true  # ensures Jekyll processing
